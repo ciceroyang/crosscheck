@@ -5,13 +5,13 @@
  * which parts have something behind them and which parts nobody looked at.
  */
 import { readFileSync } from "node:fs"
-import { extractClaims } from "../src/claims.mjs"
+import { extractClaims, urlsIn } from "../src/claims.mjs"
 import { dateProblem, invalidMonthName, resolveUrl, SUPPORTED, CONTRADICTED, UNCHECKED } from "../src/check.mjs"
 
 export async function report(text, options) {
   const opts = options || {}
   const claims = extractClaims(text)
-  const urls = Array.from(new Set(text.match(/https?:\/\/[^\s)\]}>,]+/g) || []))
+  const urls = Array.from(new Set(urlsIn(text)))
   const linkResults = []
   for (const u of urls) linkResults.push(await resolveUrl(u, opts.fetchHead))
   const findings = []

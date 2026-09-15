@@ -8,7 +8,7 @@
  */
 const DATE = /\b(\d{4})[-/年](\d{1,2})[-/月]?(\d{1,2})?日?\b|\b(\d{4})年(\d{1,2})月\b/
 const NUMBER = /\b\d+(?:\.\d+)?\s*(?:%|percent|万|亿|million|billion|人|年|倍|元|美元|美元)?/
-const URL = /https?:\/\/[^\s)\]}>,,"'。、!?!?]+/
+const URL = /https?:\/\/[^\s)\]}>,,"'。、!?!?;:]+/
 const CITATION = /\[\d{1,2}\]/
 const SOURCE = /(根据|据|来源于|出自|according to|study|report|research|survey)/i
 
