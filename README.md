@@ -1,5 +1,11 @@
 # crosscheck
 
+> **Consolidated.** This code now lives in [agentgate](https://github.com/ciceroyang/agentgate)
+> as `packages/verify`, together with the rest of the control plane under one quickstart and one
+> licence. This repository stays for its history and its releases; new work happens in
+> agentgate.
+
+
 Check what an AI just told you — with a different model.
 
 > **Where this is going, and why not here.** A "verify this answer" button is a feature
