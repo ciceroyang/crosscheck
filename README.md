@@ -2,6 +2,12 @@
 
 Check what an AI just told you — with a different model.
 
+> **Where this is going, and why not here.** A "verify this answer" button is a feature
+> inside somebody else's product and will be shipped as one. The domain worth building
+> in is the integrity of what arrives at a person or at the agent acting for them:
+> adversarial, cross-boundary, and misaligned enough that no single vendor can settle
+> it. See [docs/why-this-lasts.md](docs/why-this-lasts.md). The engine below is a
+> first working piece of that, not the product.
 ## 为什么要用另一个模型
 
 同一个模型检查自己不算验证。厂商也不可能说"用别人来核我"。
